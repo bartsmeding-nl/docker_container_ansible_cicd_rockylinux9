@@ -49,8 +49,8 @@
             id: findandreplace
             with:
               source: ${{ github.repository  }}
-              find: 'docker_container_' 
-              replace: ''
+              find: 'b-at-rtsmeding-nl/docker_container_' 
+              replace: 'bsmeding/'  
           - name: Build and push image.
             uses: docker/build-push-action@v5
             with:
